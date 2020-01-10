@@ -46,21 +46,21 @@
                 <i class="fa fa-fw" style="color:#f5576c;"  ></i>
                     Quản Trị Hệ Thống</li>
                 <li>
-                    <a href="#">
+                    <a href="approve">
                     <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Kiểm duyệt phòng trọ"></i>
                         Kiểm Duyệt Phòng Trọ
 
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="user">
                     <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Quản lý tài khoản"></i>
                         Quản Lý Tài Khoản
 
                     </a>
                 </li>
                 <li>
-                    <a href="tables-regular.html">
+                    <a href="motelroom">
                     <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Quản lý bài đăng"></i>
                         Quản Lý Các Bài Đăng
                     </a>
@@ -71,13 +71,13 @@
                     Xử Lý Vi Phạm
                 </li>
                 <li>
-                    <a href="forms-controls.html">
+                    <a href="post">
                     <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Các bài đăng vi phạm"></i>
                         </i>Bài Đăng
                     </a>
                 </li>
                 <li>
-                    <a href="forms-layouts.html">
+                    <a href="account">
                     <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Các tài khoản vi phạm  "></i>
                         </i>Tài Khoản
                     </a>
@@ -88,14 +88,14 @@
                     <i class="fa fa-database icon-gradient bg-ripe-malin"> </i>
                     Quản Lý Version</li>
                 <li>
-                    <a>
+                    <a href="opinion">
                         <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="góp ý của người dùng"></i>
 
                         Góp Ý Của Người Dùng
                     </a>
                 </li>
                 <li>
-                    <a>
+                    <a href="update">
                         <i class="metismenu-icon pe-7s-graph2">
                         </i>
                         Các Bản Nâng Cấp Hệ Thống
