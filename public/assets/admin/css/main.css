@@ -1604,8 +1604,8 @@ pre code {
     }
 
     .col-lg-6 {
-        flex: 0 0 50%;
-        max-width: 50%
+        flex: 0 0 95%;
+        max-width: 100%
     }
 
     .col-lg-7 {
@@ -1943,7 +1943,7 @@ pre code {
 }
 
 .table thead th {
-    vertical-align: bottom;
+  
     border-bottom: 2px solid #e9ecef
 }
 
