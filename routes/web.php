@@ -43,3 +43,7 @@ Route::get('opinion',function(){
 Route::get('update',function(){
     return view('admin.views.version.update');
 });
+
+Route::get('profile',function(){
+    return view('admin.views.profile.profile');
+});
