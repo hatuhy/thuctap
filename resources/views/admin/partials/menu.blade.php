@@ -1,6 +1,8 @@
 <div class="app-sidebar sidebar-shadow">
     <div class="app-header__logo">
-        <div class="logo-src"></div>
+        <a href="admin">
+            <div class="logo-src"></div>
+        </a>
         <div class="header__pane ml-auto">
             <div>
                 <button type="button" class="hamburger close-sidebar-btn hamburger--elastic"
@@ -34,57 +36,57 @@
         <div class="app-sidebar__inner">
             <ul class="vertical-nav-menu">
                 <li class="app-sidebar__heading" style="margin-right: 2px;font-size: 18px;">
-                <i class="fa fa-fw" style="color:#f5576c;" ></i>
-                Thống Kê </li>
+                    <i class="fa fa-fw" style="color:#f5576c;"></i>
+                    Thống Kê </li>
                 <li>
-                    <a href="index.html" class="mm-active">
-                    <i class=" metismenu-icon fa fa-fw" aria-hidden="true" title="Thống kê"></i>
+                    <a href="admin" class="mm-active">
+                        <i class=" metismenu-icon fa fa-fw" aria-hidden="true" title="Thống kê"></i>
                         Hoạt động của hệ thống
                     </a>
                 </li>
                 <li class="app-sidebar__heading" style="margin-right: 2px;font-size: 18px;">
-                <i class="fa fa-fw" style="color:#f5576c;"  ></i>
+                    <i class="fa fa-fw" style="color:#f5576c;"></i>
                     Quản Trị Hệ Thống</li>
                 <li>
                     <a href="approve">
-                    <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Kiểm duyệt phòng trọ"></i>
+                        <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Kiểm duyệt phòng trọ"></i>
                         Kiểm Duyệt Phòng Trọ
 
                     </a>
                 </li>
                 <li>
                     <a href="user">
-                    <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Quản lý tài khoản"></i>
+                        <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Quản lý tài khoản"></i>
                         Quản Lý Tài Khoản
 
                     </a>
                 </li>
                 <li>
                     <a href="motelroom">
-                    <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Quản lý bài đăng"></i>
+                        <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Quản lý bài đăng"></i>
                         Quản Lý Các Bài Đăng
                     </a>
                 </li>
 
-                <li class="app-sidebar__heading"  style="margin-right: 2px;font-size: 18px;">
+                <li class="app-sidebar__heading" style="margin-right: 2px;font-size: 18px;">
                     <i class="fa fa-hammer icon-gradient bg-arielle-smile"> </i>
                     Xử Lý Vi Phạm
                 </li>
                 <li>
                     <a href="post">
-                    <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Các bài đăng vi phạm"></i>
+                        <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Các bài đăng vi phạm"></i>
                         </i>Bài Đăng
                     </a>
                 </li>
                 <li>
                     <a href="account">
-                    <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Các tài khoản vi phạm  "></i>
+                        <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Các tài khoản vi phạm  "></i>
                         </i>Tài Khoản
                     </a>
                 </li>
 
 
-                <li class="app-sidebar__heading"  style="margin-right: 2px;font-size: 18px;">
+                <li class="app-sidebar__heading" style="margin-right: 2px;font-size: 18px;">
                     <i class="fa fa-database icon-gradient bg-ripe-malin"> </i>
                     Quản Lý Version</li>
                 <li>

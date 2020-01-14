@@ -1,5 +1,5 @@
 @extends('admin.layouts.main')
-@section('title','Trang quản trị hệ thống thuetro247.com')
+@section('title','Trang quản trị hệ thống thuê trọ')
 @section('content')
 
 <div class="row">
