@@ -56,10 +56,12 @@
                                 </a>
                                 <div tabindex="-1" role="menu" aria-hidden="true"
                                     class="dropdown-menu dropdown-menu-right">
-                                    <button type="button" tabindex="0" class="dropdown-item">Thông tin cá nhân</button>
+                                    <button type="button" tabindex="0" class="dropdown-item">
+                                        <a href="profile">Thông tin cá nhân</a>
+                                    </button>
                                     <button type="button" tabindex="0" class="dropdown-item">Tin nhắn</button></button>
-                                   
-                                    
+
+
                                     <div tabindex="-1" class="dropdown-divider"></div>
                                     <button type="button" tabindex="0" class="dropdown-item">Đăng Xuất</button>
                                 </div>
@@ -70,15 +72,35 @@
                                 Hà Văn Tú
                             </div>
                             <div class="widget-subheading">
-                               Manager
+                                Manager
                             </div>
                         </div>
-                        <div class="widget-content-right header-user-info ml-3">
-                            <button type="button" class="btn-shadow p-1 btn btn-primary">
-                                <i class="fa fa-fw" aria-hidden="true" title="Thông báo"></i>
-                            </button>
 
-
+                        <div class="page-title-actions" style="margin-left:10px;">
+                            <div class="d-inline-block dropdown"><button type="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false"
+                                    class="btn-shadow dropdown-toggle btn btn-info"><i class="fa fa-fw" aria-hidden="true"
+                                            title="Thông báo"></i></button>
+                                <div tabindex="-1" role="menu" aria-hidden="true"
+                                    class="dropdown-menu dropdown-menu-right">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item"><a href="javascript:void(0);" class="nav-link"><i
+                                                    class="nav-link-icon lnr-inbox"></i><span>Inbox </span>
+                                                <div class="ml-auto badge badge-pill badge-secondary">86</div>
+                                            </a></li>
+                                        <li class="nav-item"><a href="javascript:void(0);" class="nav-link"><i
+                                                    class="nav-link-icon lnr-book"></i><span>Book </span>
+                                                <div class="ml-auto badge badge-pill badge-danger">5</div>
+                                            </a></li>
+                                        <li class="nav-item"><a href="javascript:void(0);" class="nav-link"><i
+                                                    class="nav-link-icon lnr-picture"></i><span>Picture </span></a></li>
+                                        <li class="nav-item"><a disabled href="javascript:void(0);"
+                                                class="nav-link disabled"><i
+                                                    class="nav-link-icon lnr-file-empty"></i><span>File Disabled
+                                                </span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
