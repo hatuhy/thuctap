@@ -20,10 +20,15 @@ Route::get('admin', function () {
 Route::get('approve',function(){
     return view('admin.views.administration.approve');
 });
-// danh sach nguoi dung tham gia he thong
 Route::get('user',function(){
     return view('admin.views.administration.user');
 });
+// danh sach nguoi dung tham gia he thong
+Route::get('user','UserController@getList')->name('danhsachnd');
+Route::group(['prefix'=>'user'],function(){
+    Route::get('change_user/{id}','UserController@getChangeUser')->name('suand');
+    Route::post('change_user/{id}','UserController@postChangeUser')-> name('suanguoidung');
+}); 
 // danh sach phong tro , nha tro , hometstay,...
 Route::get('motelroom',function(){
     return view('admin.views.administration.motelroom');
@@ -49,3 +54,22 @@ Route::get('update',function(){
 Route::get('profile',function(){
     return view('admin.views.profile.profile');
 });
+// Route::get('dangnhap',function(){
+//     return view('client.views.login');
+// });
+//logout
+Route::get('dangxuat','HomeController@getDangXuat');
+//register
+Route::get('dangki',function(){
+    return view('client.views.register');
+});
+
+Route::post('dangki','HomeController@postDangKi')->name('post-dangki');
+//login
+route::get('dangnhap','HomeController@getDangNhap')->name('login');
+route::post('dangnhap','HomeController@postDangNhap');
+Route::get('auth/{provider}', 'Auth\LoginController@redirectToProvider');
+Route::get('auth/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
+
+Route::get('auth/{provider}', 'Auth\LoginController@redirectToProvider1');
+Route::get('auth/{provider}/callback', 'Auth\LoginController@handleProviderCallback1');

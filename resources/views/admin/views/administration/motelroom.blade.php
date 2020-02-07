@@ -54,26 +54,31 @@
         </div>
     </div>
 </div>
-<div class="row">
+
     <div class="col-lg-6">
         <div class="main-card mb-3 card">
             <div class="card-body">
                 <h5 class="card-title">Table with hover</h5>
+                <div class="table-responsive">
                 <table class="mb-0 table table-hover">
                     <thead>
                         <tr>
-                            <th style=" width:5%;">#</th>
-                            <th style=" width:25%;">Tiêu Đề</th>
-                            <th style=" width:8%;">Hình Thức</th>
-                            <th style=" width:6%;">Diện Tích</th>
-                            <th style=" width:5%;">Giá </th>
-                            <th style=" width:8%;">Địa Chỉ</th>
-                            <th style=" width:8%;">Người Đăng</th>
-                            <th style=" width:7%;">Số Lần Chỉnh Sửa</th>
-                            <th style=" width:12%;">Lần Sửa Cuối</th>
-                            <th style=" width:5%;">View</th>
-                            <th style=" width:5%;">Trạng Thái</th>
-                            
+                            <th>#</th>
+                            <th>Tiêu Đề</th>
+                            <th>Hình Thức</th>
+                            <th>Diện Tích</th>
+                            <th>Giá </th>
+                            <th>Địa Chỉ</th>
+                            <th>Người Đăng</th>
+                            <th>Số Lần Chỉnh Sửa</th>
+                            <th>Lần Sửa Cuối</th>
+                            <th>View</th>
+                            <th>Trạng Thái</th>
+                            <th>Người Đăng</th>
+                            <th>Số Lần Chỉnh Sửa</th>
+                            <th>Lần Sửa Cuối</th>
+                            <th>View</th>
+                            <th>Trạng Thái</th> 
                             <th></th>
                         </tr>
                     </thead>
@@ -194,7 +199,9 @@
                         </tr>
                     </tbody>
                 </table>
+                </div>
             </div>
         </div>
     </div>
-</div>@endsection
+
+@endsection
