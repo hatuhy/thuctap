@@ -55,7 +55,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="user">
+                    <a href="{{route('danhsachnd')}}">
                         <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Quản lý tài khoản"></i>
                         Quản Lý Tài Khoản
 

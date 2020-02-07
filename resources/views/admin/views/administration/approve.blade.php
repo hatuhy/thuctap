@@ -36,7 +36,7 @@
         <div class="main-card mb-3 card">
             <div class="card-body">
                 <h5 class="card-title">Table with hover</h5>
-                <table class="mb-0 table table-hover">
+                <table id="myTable"class="mb-0 table table-hover">
                     <thead>
                         <tr>
                             <th>#</th>

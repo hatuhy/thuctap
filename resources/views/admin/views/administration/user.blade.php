@@ -90,8 +90,7 @@
     <div class="col-lg-6">
         <div class="main-card mb-3 card">
             <div class="card-body">
-                <h5 class="card-title">Table striped</h5>
-                <table class="mb-0 table table-striped">
+                <table id="myTable" class="table table-striped mytable">
                     <thead>
                         <tr>
                             <th>#</th>
@@ -105,74 +104,64 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Hà Văn Tú</td>
-                            <td>hatu1998hy@gmail.com</td>
-                            <td>0376521198</td>
-                            <td>2</td>
-                            <td>Admin</td>
-                            <td>Còn hoạt động</td>
-                            <td>action</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Hà Văn Tú</td>
-                            <td>hatu1998hy@gmail.com</td>
-                            <td>0376521198</td>
-                            <td>2</td>
-                            <td>Admin</td>
-                            <td>Còn hoạt động</td>
-                            <td>action</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Hà Văn Tú</td>
-                            <td>hatu1998hy@gmail.com</td>
-                            <td>0376521198</td>
-                            <td>2</td>
-                            <td>Admin</td>
-                            <td>Còn hoạt động</td>
-                            <td>action</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Hà Văn Tú</td>
-                            <td>hatu1998hy@gmail.com</td>
-                            <td>0376521198</td>
-                            <td>2</td>
-                            <td>Admin</td>
-                            <td>Còn hoạt động</td>
-                            <td>action</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Hà Văn Tú</td>
-                            <td>hatu1998hy@gmail.com</td>
-                            <td>0376521198</td>
-                            <td>2</td>
-                            <td>Admin</td>
-                            <td>Còn hoạt động</td>
-                            <td>action</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Hà Văn Tú</td>
-                            <td>hatu1998hy@gmail.com</td>
-                            <td>0376521198</td>
-                            <td>2</td>
-                            <td>Admin</td>
-                            <td>Còn hoạt động</td>
-                            <td>action</td>
-                        </tr>
+                    <?php
+                                $i=0;
+                              ?>                          
+                              @foreach($nguoidungs as $nd)
+                              <?php
+                                $i+=1;
+                              ?>
+                              
+                              <tr>
+                            <td>{{$i}}</td>
+                              <td>{{$nd->name}}</td>
+                              <td>{{$nd->email}}</td>
+                              @if($nd->phone)
+                              <td><a href="tel://{{$nd->phone}}">
+                              {{$nd->phone}}
+                              </a>
+                              </td>
+                             
+                              @else
+                              <td>No Number</td>
+                              @endif
+                            @if($nd->vip > 0)
+                              <td style="color:orange">  {{$nd->vip}}</td>
+                            @else
+                            <td>{{$nd->vip}}</td>
+                            @endif
+                              @if($nd->role==1)
+                              <td style ="color:red">
+                              Admin
+                               </td>
+                               @endif
+                               @if($nd->role==0)
+                              <td style ="color:black">
+                              User
+                               </td>
+                               @endif
+                             @if($nd->status==1)
+                              <td style="color:green">
+                                Đang hoạt động
+                              </td> 
+                              @else
+                                @if($nd->status==0)
+                                <td style="color:Red">
+                                Đã Khóa
+                              </td> 
+                                @endif
+                              @endif  
+                              <td>
+                                <button class="btn btn-success categoryButton sua"><a href="">
+                                <i class="far fa-edit"></i>
+                              </a></button>
+                              </td>
+                              </tr>
+                              @endforeach 
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
 </div>
-
-
-
-
 @endsection
