@@ -28,7 +28,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectToAdmin = '/admin';
+    protected $redirectTo= '/admin';
     protected $redirectToClient = '/index';
 
     /**

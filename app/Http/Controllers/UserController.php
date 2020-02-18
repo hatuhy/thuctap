@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use App\Opinion;
 use Illuminate\Support\Facades\Auth;
 class UserController extends Controller
 {
@@ -12,15 +13,34 @@ class UserController extends Controller
         return view('admin.views.administration.user',['nguoidungs'=>$user]);
     }
     public function getChangeUser($id){
-        // $user = users::find($id);
-        // return view('Admin.Page.user.change_user',['nguoidungs'=>$user]);
+        $nguoidung = User::find($id);
+        return view('admin.views.user.change_user',['nguoidungs'=>$nguoidung]);
     }
     
     public function postChangeUser(Request $request,$id){
-        // $nguoidung = users::find($id);
-        // $nguoidung->right = $request ->Quyen;
-        // $nguoidung->status =$request->TinhTrang;
-        // $nguoidung->save();
-        // return redirect('admin/nguoidung/change_user/'.$id)->with('thongbao','Sửa Thành Công');
+        $nguoidung = User::find($id);
+        $nguoidung->role = $request ->Quyen;
+        $nguoidung->status =$request->TinhTrang;
+        $nguoidung->vip =$request->Vip;
+        $nguoidung->save();
+        return redirect('user/change_user/'.$id)->with('thongbao','Sửa Thành Công');
     }
+    public function lockUser(Request $request,$id){
+        $nguoidung = User::find($id);
+        $nguoidung->status = 0;
+        $nguoidung->save();
+        return redirect('user/lock_user/'.$id)->with('thongbao','Khóa Thành Công');
+    }
+    public function unLockUser(Request $request,$id){
+        $nguoidung = User::find($id);
+        $nguoidung->status = 0;
+        $nguoidung->save();
+        return redirect('user/unlock_user/'.$id)->with('thongbao','Mở Khóa Thành Công');
+    }
+    // gop y cua ng dung
+    public function getOpinion(){
+            $op = Opinion::all();
+            return view('admin.views.version.opinion',['ops'=>$op]);
+    }
+   
 }

@@ -64,7 +64,7 @@
 
                                     <div tabindex="-1" class="dropdown-divider"></div>
                                     <button type="button" tabindex="0" class="dropdown-item">
-                                        <a href="dangxuat">Đăng Xuất</a>
+                                        <a href="{{route('dangxuat')}}">Đăng Xuất</a>
                                    </button>
                                 </div>
                             </div>

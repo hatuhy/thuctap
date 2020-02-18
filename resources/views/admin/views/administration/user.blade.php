@@ -13,16 +13,17 @@
     <div class="page-title-wrapper">
         <div class="page-title-heading">
             <div class="page-title-icon">
-            <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Quản lý tài khoản"></i>
+                <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Quản lý tài khoản"></i>
             </div>
             <div style="color: #1ca9e9;font-size: 23px;">Danh Sách Những Tài Khoản Tham Gia Hệ Thống
-               
+
                 <div id="exampleAccordion" data-children=".item">
                     <div class="item">
                         <button type="button" aria-expanded="true" aria-controls="exampleAccordion1"
                             data-toggle="collapse" href="#collapseExample" class="m-0 p-0 btn btn-link">Ẩn/Hiện</button>
                         <div data-parent="#exampleAccordion" id="collapseExample" class="collapse hide">
-                            <div class="page-title-subheading" style="color:black;">Đây là những tài khoản tham gia hệ thống trang web
+                            <div class="page-title-subheading" style="color:black;">Đây là những tài khoản tham gia hệ
+                                thống trang web
                                 thuetro247.com</br>
                                 @@ ^^ =_=
                             </div>
@@ -101,63 +102,82 @@
                             <th>Quyền</th>
                             <th>Trạng Thái</th>
                             <th></th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
-                    <?php
+                        <?php
                                 $i=0;
-                              ?>                          
-                              @foreach($nguoidungs as $nd)
-                              <?php
+                              ?>
+                        @foreach($nguoidungs as $nd)
+                        <?php
                                 $i+=1;
                               ?>
-                              
-                              <tr>
+
+                        <tr>
                             <td>{{$i}}</td>
-                              <td>{{$nd->name}}</td>
-                              <td>{{$nd->email}}</td>
-                              @if($nd->phone)
-                              <td><a href="tel://{{$nd->phone}}">
-                              {{$nd->phone}}
-                              </a>
-                              </td>
-                             
-                              @else
-                              <td>No Number</td>
-                              @endif
+                            <td>{{$nd->name}}</td>
+                            <td>{{$nd->email}}</td>
+                            @if($nd->phone)
+                            <td><a href="tel://{{$nd->phone}}">
+                                    {{$nd->phone}}
+                                </a>
+                            </td>
+
+                            @else
+                            <td>No Number</td>
+                            @endif
                             @if($nd->vip > 0)
-                              <td style="color:orange">  {{$nd->vip}}</td>
+                            <td style="color:orange"> {{$nd->vip}}</td>
                             @else
                             <td>{{$nd->vip}}</td>
                             @endif
-                              @if($nd->role==1)
-                              <td style ="color:red">
-                              Admin
-                               </td>
-                               @endif
-                               @if($nd->role==0)
-                              <td style ="color:black">
-                              User
-                               </td>
-                               @endif
-                             @if($nd->status==1)
-                              <td style="color:green">
+                            @if($nd->role==1)
+                            <td style="color:red">
+                                Admin
+                            </td>
+                            @endif
+                            @if($nd->role==0)
+                            <td style="color:black">
+                                User
+                            </td>
+                            @endif
+                            @if($nd->status==1)
+                            <td style="color:green">
                                 Đang hoạt động
-                              </td> 
-                              @else
-                                @if($nd->status==0)
-                                <td style="color:Red">
+                            </td>
+                            @else
+                            @if($nd->status==0)
+                            <td style="color:Red">
                                 Đã Khóa
-                              </td> 
-                                @endif
-                              @endif  
-                              <td>
-                                <button class="btn btn-success categoryButton sua"><a href="">
-                                <i class="far fa-edit"></i>
-                              </a></button>
-                              </td>
-                              </tr>
-                              @endforeach 
+                            </td>
+                            @endif
+                            @endif
+                            <td>
+                                <button class="btn btn-success categoryButton sua"><a
+                                        href="user/change_user/{{$nd->id}}">
+                                        <i class="fa fa-fw" aria-hidden="true" title="Sửa"></i>
+                                    </a></button>
+                            </td>
+                            @if($nd->status==1)
+                            <td>
+                                <button class="btn btn-success categoryButton sua"><a href="user/lock/{{$nd->id}}">
+                                        <i class="fa fa-fw" aria-hidden="true" title="Khóa"></i>
+                                    </a></button>
+                            </td>
+                            @else
+                            @if($nd->status==0)
+                            <td>
+                                <button class="btn btn-success categoryButton sua"><a href="user/unlock/{{$nd->id}}">
+                                <i class="fa fa-fw" aria-hidden="true" title="Mở Khóa"></i>
+                                    </a></button>
+                            </td>
+                            @endif
+                            @endif
+
+
+                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>

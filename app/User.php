@@ -38,10 +38,10 @@ class User extends Authenticatable
     ];
     protected $table = 'users';
 
-    // public function motelrooms(){
-    //     return $this->hasMany('App\motelrooms','user_id','id');
-    // }
-    // public function noti_user(){
+    public function Motelroom(){
+        return $this->hasMany('App\Motelroom','user_id','id');
+    }
+    // public function (){
     //     return $this->hasMany('App\noti_user','id_user','id');
     // }
 }

@@ -48,7 +48,7 @@
                     <i class="fa fa-fw" style="color:#f5576c;"></i>
                     Quản Trị Hệ Thống</li>
                 <li>
-                    <a href="approve">
+                    <a href="{{route('approve')}}">
                         <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Kiểm duyệt phòng trọ"></i>
                         Kiểm Duyệt Phòng Trọ
 
@@ -62,7 +62,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="motelroom">
+                    <a href="{{route('dspost')}}">
                         <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Quản lý bài đăng"></i>
                         Quản Lý Các Bài Đăng
                     </a>

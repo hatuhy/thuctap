@@ -1,6 +1,6 @@
-@extends('admin.layouts.main') 
-@section('title', 'Quản lý danh sách các phòng trọ , nhà trọ , homestay , ktx ,...') 
-@section('content') 
+@extends('admin.layouts.main')
+@section('title', 'Quản lý danh sách các phòng trọ , nhà trọ , homestay , ktx ,...')
+@section('content')
 <div class="app-page-title">
     <div>
         <nav class="" aria-label="breadcrumb">
@@ -55,153 +55,81 @@
     </div>
 </div>
 
-    <div class="col-lg-6">
-        <div class="main-card mb-3 card">
-            <div class="card-body">
+<div class="col-lg-6">
+    <div class="main-card mb-3 card">
+        <div class="card-body">
+            <form action="" method="get">
+                @CSRF
                 <h5 class="card-title">Table with hover</h5>
                 <div class="table-responsive">
-                <table class="mb-0 table table-hover">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Tiêu Đề</th>
-                            <th>Hình Thức</th>
-                            <th>Diện Tích</th>
-                            <th>Giá </th>
-                            <th>Địa Chỉ</th>
-                            <th>Người Đăng</th>
-                            <th>Số Lần Chỉnh Sửa</th>
-                            <th>Lần Sửa Cuối</th>
-                            <th>View</th>
-                            <th>Trạng Thái</th>
-                            <th>Người Đăng</th>
-                            <th>Số Lần Chỉnh Sửa</th>
-                            <th>Lần Sửa Cuối</th>
-                            <th>View</th>
-                            <th>Trạng Thái</th> 
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Cho thuê phòng trọ giá rẻ</td>
-                            <td>Cho thuê</td>
-                            <td>20 m<span>2</span></td>
-                            <td>500k VNĐ</td>
-                            <td>Từ Liêm</td>
-                            <td>Hà Văn Tú</td>
-                            <td>2</td>
-                            <td>2020-01-10 02:20:27</td>
-                            <td>20</td>
-                            <td>Oke</td>
-                            <td>action</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Cho thuê phòng trọ giá rẻ</td>
-                            <td>Cho thuê</td>
-                            <td>20 m<span>2</span></td>
-                            <td>500k VNĐ</td>
-                            <td>Từ Liêm</td>
-                            <td>Hà Văn Tú</td>
-                            <td>2</td>
-                            <td>2020-01-10 02:20:27</td>
-                            <td>20</td>
-                            <td>Oke</td>
-                            <td>action</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Cho thuê phòng trọ giá rẻ</td>
-                            <td>Cho thuê</td>
-                            <td>20 m<span>2</span></td>
-                            <td>500k VNĐ</td>
-                            <td>Từ Liêm</td>
-                            <td>Hà Văn Tú</td>
-                            <td>2</td>
-                            <td>2020-01-10 02:20:27</td>
-                            <td>20</td>
-                            <td>Oke</td>
-                            <td>action</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Cho thuê phòng trọ giá rẻ</td>
-                            <td>Cho thuê</td>
-                            <td>20 m<span>2</span></td>
-                            <td>500k VNĐ</td>
-                            <td>Từ Liêm</td>
-                            <td>Hà Văn Tú</td>
-                            <td>2</td>
-                            <td>2020-01-10 02:20:27</td>
-                            <td>20</td>
-                            <td>Oke</td>
-                            <td>action</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Cho thuê phòng trọ giá rẻ</td>
-                            <td>Cho thuê</td>
-                            <td>20 m<span>2</span></td>
-                            <td>500k VNĐ</td>
-                            <td>Từ Liêm</td>
-                            <td>Hà Văn Tú</td>
-                            <td>2</td>
-                            <td>2020-01-10 02:20:27</td>
-                            <td>20</td>
-                            <td>Oke</td>
-                            <td>action</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Cho thuê phòng trọ giá rẻ</td>
-                            <td>Cho thuê</td>
-                            <td>20 m<span>2</span></td>
-                            <td>500k VNĐ</td>
-                            <td>Từ Liêm</td>
-                            <td>Hà Văn Tú</td>
-                            <td>2</td>
-                            <td>2020-01-10 02:20:27</td>
-                            <td>20</td>
-                            <td>Oke</td>
-                            <td>action</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>action</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>action</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>action</td>
-                        </tr>
-                    </tbody>
-                </table>
+                    <table class="mb-0 table table-hover">
+
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Tiêu Đề</th>
+                                <th>Hình Thức</th>
+                                <th>Loại Hình</th>
+                                <th>Diện Tích</th>
+                                <th>Giá </th>
+                                <th>Địa Chỉ</th>
+                                <th>Người Đăng</th>
+                                <th>Số Lần Chỉnh Sửa</th>
+                                <th>Lần Sửa Cuối</th>
+                                <th>View</th>
+                                <th>Trạng Thái</th>
+                                <th>Người Đăng</th>
+                                <th>Số Lần Chỉnh Sửa</th>
+                                <th>Lần Sửa Cuối</th>
+                                <th>View</th>
+                                <th>Trạng Thái</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                                $i=0;
+                              ?>
+                            @foreach($dspts as $dspt)
+                            <?php
+                                $i+=1;
+                              ?>
+                            <tr>
+                                <th scope="row">{{$i}}</th>
+                                <td>{{$dspt->title}}</td>
+                                <td>{{$dspt->Type->name}}</td>
+                                <td>{{$dspt->Form->name}}</td>
+                                <td>{{$dspt->area}}m<span>2</span></td>
+                                <td>{{number_format($dspt->price)}}</td>
+                                <td>{{$dspt->address}}</td>
+                                <td>{{$dspt->User->name}}</td>
+                                <td>{{$dspt->num_change}}</td>
+                                <td>{{$dspt->updated_at}}</td>
+                                <td>{{$dspt->view}}</td>
+                                <td>{{$dspt->status}}</td>
+                                <td>{{$dspt->User->name}}</td>
+                                <td>{{$dspt->num_change}}</td>
+                                <td>{{$dspt->updated_at}}</td>
+                                <td>{{$dspt->view}}</td>
+                                <td>{{$dspt->status}}</td>
+                                <td>
+
+                                    @if(session('thongbao'))
+                                    <div class="alert alert-success">
+                                        {{ session('thongbao') }}
+                                    </div>
+                                    @endif
+                                    <button class="btn btn-success categoryButton sua"><a href="">
+                                            <i class="fa fa-fw" aria-hidden="true" title="Kiểm duyệt"></i>
+                                        </a></button>
+                                </td>
+                                @endforeach
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-            </div>
         </div>
     </div>
+</div>
 
 @endsection
