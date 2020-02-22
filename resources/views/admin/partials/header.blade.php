@@ -57,7 +57,7 @@
                                 <div tabindex="-1" role="menu" aria-hidden="true"
                                     class="dropdown-menu dropdown-menu-right">
                                     <button type="button" tabindex="0" class="dropdown-item">
-                                        <a href="profile">Thông tin cá nhân</a>
+                                        <a href="{{route('profile')}}">Thông tin cá nhân</a>
                                     </button>
                                     <button type="button" tabindex="0" class="dropdown-item">Tin nhắn</button></button>
 
@@ -87,15 +87,15 @@
                                     class="dropdown-menu dropdown-menu-right">
                                     <ul class="nav flex-column">
                                         <li class="nav-item"><a href="javascript:void(0);" class="nav-link"><i
-                                                    class="nav-link-icon lnr-inbox"></i><span>Inbox </span>
-                                                <div class="ml-auto badge badge-pill badge-secondary">86</div>
+                                                    class="nav-link-icon lnr-inbox"></i><span>Chờ kiểm duyệt</span>
+                                                <div class="ml-auto badge badge-pill badge-secondary">10</div>
                                             </a></li>
                                         <li class="nav-item"><a href="javascript:void(0);" class="nav-link"><i
-                                                    class="nav-link-icon lnr-book"></i><span>Book </span>
+                                                    class="nav-link-icon lnr-book"></i><span>Số bài đăng bị báo cáo </span>
                                                 <div class="ml-auto badge badge-pill badge-danger">5</div>
                                             </a></li>
                                         <li class="nav-item"><a href="javascript:void(0);" class="nav-link"><i
-                                                    class="nav-link-icon lnr-picture"></i><span>Picture </span></a></li>
+                                                    class="nav-link-icon lnr-picture"></i><span>Góp ý người dùng </span></a></li>
                                         <li class="nav-item"><a disabled href="javascript:void(0);"
                                                 class="nav-link disabled"><i
                                                     class="nav-link-icon lnr-file-empty"></i><span>File Disabled

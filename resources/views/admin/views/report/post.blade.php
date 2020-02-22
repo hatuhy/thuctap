@@ -1,6 +1,6 @@
-@extends('admin.layouts.main') 
-@section('title', 'Bài Đăng Vi Phạm') 
-@section('content') 
+@extends('admin.layouts.main')
+@section('title', 'Bài Đăng Vi Phạm')
+@section('content')
 <div class="app-page-title">
     <div>
         <nav class="" aria-label="breadcrumb">
@@ -58,13 +58,14 @@
     <div class="col-lg-6">
         <div class="main-card mb-3 card">
             <div class="card-body">
-                <h5 class="card-title">Table with hover</h5>
+                <h5 class="card-title">Tổng hợp bài đăng vi phạm chờ xử lý</h5>
                 <table class="mb-0 table table-hover">
                     <thead>
                         <tr>
                             <th>#</th>
                             <th>Người Báo Cáo</th>
                             <th>SĐT</th>
+                            <th>Email</th>
                             <th>Bài Đăng </th>
                             <th>Tài Khoản</th>
                             <th>Mô Tả Vi Phạm</th>
@@ -73,17 +74,41 @@
                         </tr>
                     </thead>
                     <tbody>
-                       
+                        <?php
+                                $i=0;
+                              ?>
+                            @foreach($posts as $po)
+                        <?php
+                                $i+=1;
+                              ?>
                         <tr>
-                            <th scope="row">1</th>
-                            <td>Hà Văn Tú</td>
-                            <td>0376521198</td>
-                            <td>Cho thuê nhà trọ 25</td>
-                            <td>Nguyễn Văn A</td>
-                            <td>Phòng trọ đã có người thuê </td>
-                            <td>2020-01-01</td>
+                            <th scope="row">{{$i}}</th>
+                            <td>{{$po->name}}</td>
+                            @if($po->phone)
+                            <td><a href="tel://{{$po->phone}}">
+                                    {{$po->phone}}
+                                </a>
+                            </td>
+
+                            @else
+                            <td>No Number</td>
+                            @endif
+                            @if($po->email)
+                            <td><a href="email://{{$nd->phone}}">
+                                    {{$po->email}}
+                                </a>
+                            </td>
+
+                            @else
+                            <td>No Email</td>
+                            @endif
+                            <td>{{$po->Motelroom->title}}</td>
+                            <td>{{$po->Motelroom->User->name}}</td>
+                            <td>{{$po->title}}</td>
+                            <td>{{$po->created_at}}</td>
                             <td>action</td>
                         </tr>
+                            @endforeach
                     </tbody>
                 </table>
             </div>

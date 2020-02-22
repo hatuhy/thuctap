@@ -26,6 +26,7 @@ class MotelroomController extends Controller
         return redirect()->back();
     }
     
+    
     public function anBaiDang($id){
         $post = Motelroom::find($id);
         $post->status = 2;

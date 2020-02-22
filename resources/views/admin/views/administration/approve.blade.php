@@ -1,5 +1,5 @@
 @extends('admin.layouts.main')
-@section('title', 'Trang quản trị hệ thống thuetro247.com')
+@section('title','Trang quản trị hệ thống thuetro247.com')
 @section('content')
 <div class="app-page-title">
     <div>
@@ -48,6 +48,7 @@
                             <th>Người Đăng</th>
                             <th>Ngày Đăng</th>
                             <th></th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -75,9 +76,18 @@
                                 @endif
                                 <form action="bai-dang/chua-kiem-duyet/kiem-duyet/{{$ptckd->id}}" method="get">
                                     @CSRF
-                                    <button class="btn btn-success categoryButton sua"><a href=""> 
+                                    <button class="btn btn-success categoryButton sua">
+                                        <a href="">
                                             <i class="fa fa-fw" aria-hidden="true" title="Kiểm duyệt"></i>
-                                        </a></button>
+                                        </a>
+                                    </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-success categoryButton sua">
+                                    <a href="" style="color:red">
+                                        <i class="fa fa-fw" aria-hidden="true" title="Ẩn Bài Đăng"></i>
+                                    </a>
+                                </button>   
                             </td>
                         </tr>
                         @endforeach

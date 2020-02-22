@@ -8,7 +8,7 @@
             <div class="card-header-tab card-header-tab-animation card-header">
                 <div class="card-header-title">
                     <i class="header-icon lnr-apartment icon-gradient bg-love-kiss"> </i>
-                    Sales Report
+                    Thống Kê
                 </div>
             </div>
             <div class="card-body">
@@ -31,8 +31,10 @@
             <div class="widget-content-outer">
                 <div class="widget-content-wrapper">
                     <div class="widget-content-left">
-                        <div class="widget-heading">Total Orders</div>
-                        <div class="widget-subheading">Last year expenses</div>
+                        <div class="widget-heading">Số Bài Viết Cần Kiểm Duyệt</div>
+                        <div class="widget-subheading">
+                            <a href="{{route('approve')}}">Đi tới kiểm duyệt</a>
+                        </div>
                     </div>
                     <div class="widget-content-right">
                         <div class="widget-numbers text-success">1896</div>
@@ -44,8 +46,10 @@
             <div class="widget-content-outer">
                 <div class="widget-content-wrapper">
                     <div class="widget-content-left">
-                        <div class="widget-heading">Products Sold</div>
-                        <div class="widget-subheading">Revenue streams</div>
+                        <div class="widget-heading">Tổng số bài đăng trong hệ thống</div>
+                        <div class="widget-subheading">
+                            <a href="{{route('dspost')}}">Đi tới quản lý bài đăng</a>
+                        </div>
                     </div>
                     <div class="widget-content-right">
                         <div class="widget-numbers text-warning">$3M</div>
@@ -57,8 +61,10 @@
             <div class="widget-content-outer">
                 <div class="widget-content-wrapper">
                     <div class="widget-content-left">
-                        <div class="widget-heading">Followers</div>
-                        <div class="widget-subheading">People Interested</div>
+                        <div class="widget-heading">Tổng số tài khoản trong hệ thống</div>
+                        <div class="widget-subheading">
+                            <a href="{{route('danhsachnd')}}">Đi tới quản lý người dùng</a>
+                        </div>
                     </div>
                     <div class="widget-content-right">
                         <div class="widget-numbers text-danger">45,9%</div>

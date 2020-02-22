@@ -39,7 +39,7 @@
                     <i class="fa fa-fw" style="color:#f5576c;"></i>
                     Thống Kê </li>
                 <li>
-                    <a href="admin" class="mm-active">
+                    <a href="{{route('thongke')}}" class="mm-active">
                         <i class=" metismenu-icon fa fa-fw" aria-hidden="true" title="Thống kê"></i>
                         Hoạt động của hệ thống
                     </a>
@@ -73,13 +73,13 @@
                     Xử Lý Vi Phạm
                 </li>
                 <li>
-                    <a href="post">
+                    <a href="{{route('rep-post')}}">
                         <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Các bài đăng vi phạm"></i>
                         </i>Bài Đăng
                     </a>
                 </li>
                 <li>
-                    <a href="account">
+                    <a href="{{route('rep-account')}}">
                         <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="Các tài khoản vi phạm  "></i>
                         </i>Tài Khoản
                     </a>
@@ -90,14 +90,14 @@
                     <i class="fa fa-database icon-gradient bg-ripe-malin"> </i>
                     Quản Lý Version</li>
                 <li>
-                    <a href="opinion">
+                    <a href="{{route('opinion')}}">
                         <i class="metismenu-icon fa fa-fw" aria-hidden="true" title="góp ý của người dùng"></i>
 
                         Góp Ý Của Người Dùng
                     </a>
                 </li>
                 <li>
-                    <a href="update">
+                    <a href="{{route('update')}}">
                         <i class="metismenu-icon pe-7s-graph2">
                         </i>
                         Các Bản Nâng Cấp Hệ Thống
